@@ -1,0 +1,15 @@
+.uWidth {
+  width: 860px;
+}
+.uFlex-x1 {
+  flex: 1;
+}
+.uFlex-x05 {
+  flex: 0.5;
+}
+.uFlex-x025 {
+  flex: 0.25;
+}
+.uBox {
+  width: 200px;
+}

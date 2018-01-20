@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+.StickyFooter {
+  flex: 0 0 auto;
+  background: #FABCA3;
+  height: 60px;
+}

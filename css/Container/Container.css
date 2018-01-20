@@ -1,0 +1,16 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.Container--centered {
+  margin: 0 auto;
+}
+.Container-col {
+  display: flex;
+  flex-direction: column;
+}
+.Container-row {
+  display: flex;
+  flex-direction: row;
+}

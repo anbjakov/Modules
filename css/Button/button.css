@@ -1,0 +1,12 @@
+.Button {
+  display: flex;
+  background: #4F80E1;
+  max-width: 100px;
+  color: #FFF;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Button:hover {
+  background: #7DAEE9 ;
+}

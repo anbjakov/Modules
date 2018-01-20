@@ -1,0 +1,93 @@
+.Card {
+  display: flex;
+  background: #7DAEE9;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.Card--directionRow {
+  flex-direction: row;
+}
+.Card--directionColumn {
+  flex-direction: column;
+}
+.Card--directionColumnReverse {
+  flex-direction: column-reverse;
+}
+.Card--directionRowReverse {
+  flex-direction: row-reverse;
+}
+.Card-image {
+  display: flex;
+  flex: 1;
+  background: #8DC4FD;
+}
+.Card img {
+  width: 100%;
+}
+.Card-content {
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #A7D6FE;
+  color: #FFF;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.Container--centered {
+  margin: 0 auto;
+}
+.Container-col {
+  display: flex;
+  flex-direction: column;
+}
+.Container-row {
+  display: flex;
+  flex-direction: row;
+}
+.uWidth {
+  width: 860px;
+}
+.uFlex-x1 {
+  flex: 1;
+}
+.uFlex-x05 {
+  flex: 0.5;
+}
+.uFlex-x025 {
+  flex: 0.25;
+}
+.uBox {
+  width: 200px;
+}
+.Button {
+  display: flex;
+  background: #4F80E1;
+  max-width: 100px;
+  color: #FFF;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Button:hover {
+  background: #7DAEE9 ;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+.StickyFooter {
+  flex: 0 0 auto;
+  background: #FABCA3;
+  height: 60px;
+}
+.wrap {
+  display: flex;
+  margin: 5px;
+}

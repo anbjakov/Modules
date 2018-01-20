@@ -1,0 +1,33 @@
+.Card {
+  display: flex;
+  background: #7DAEE9;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.Card--directionRow {
+  flex-direction: row;
+}
+.Card--directionColumn {
+  flex-direction: column;
+}
+.Card--directionColumnReverse {
+  flex-direction: column-reverse;
+}
+.Card--directionRowReverse {
+  flex-direction: row-reverse;
+}
+.Card-image {
+  display: flex;
+  flex: 1;
+  background: #8DC4FD;
+}
+.Card img {
+  width: 100%;
+}
+.Card-content {
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #A7D6FE;
+  color: #FFF;
+}

@@ -1,0 +1,39 @@
+@CardBg: #7DAEE9;
+@imageBg: #8DC4FD;
+@contentBg: #A7D6FE;
+@contentColor: #FFF;
+.Card {
+  display: flex;
+  background: @CardBg;
+  box-shadow: 0 10px 6px -6px #777;
+  &--directionRow {
+    flex-direction: row;
+  }
+  &--directionColumn {
+    flex-direction: column;
+  }
+  &--directionColumnReverse {
+    flex-direction: column-reverse;
+  }
+  &--directionRowReverse {
+    flex-direction: row-reverse;
+  }
+
+  &-image {
+    display: flex;
+    flex: 1;
+    background: @imageBg;
+  }
+  img {
+    width: 100%;
+  }
+  &-content {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: @contentBg;
+    color: @contentColor;
+  }
+
+}
