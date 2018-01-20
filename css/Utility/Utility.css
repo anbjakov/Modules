@@ -1,5 +1,5 @@
 .uWidth {
-  width: 860px;
+  max-width: 860px;
 }
 .uFlex-x1 {
   flex: 1;
