@@ -87,6 +87,21 @@ html {
   background: #FABCA3;
   height: 60px;
 }
+.Nav {
+  display: flex;
+  list-style: none;
+  line-height: 2.5;
+  border: 1px solid black;
+  background: #4F80E1;
+  color: #fff;
+}
+.Nav-items {
+  display: flex;
+  background: #7DAEE9;
+}
+.Nav-items--alignSelf {
+  margin-left: auto;
+}
 .wrap {
   display: flex;
   margin: 5px;
