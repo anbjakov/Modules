@@ -1,12 +1,19 @@
 .Button {
   display: flex;
-  background: #4F80E1;
+  background: #f52620;
   max-width: 100px;
   color: #FFF;
   border: none;
   padding: 5px;
   border-radius: 5px;
+  align-self: center;
 }
-.Button:hover {
-  background: #7DAEE9 ;
+.Button-altButton {
+  background: linear-gradient(to top, #eeeeee 20%, #f9f9f8 50%, #fefefe 80%);
+  padding: 8px;
+  display: flex;
+  max-width: 100px;
+  color: #000;
+  border: none;
+  justify-content: center;
 }

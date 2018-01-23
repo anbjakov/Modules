@@ -1,4 +1,4 @@
-@CardBg: #7DAEE9;
+@CardBg: #fff;
 @imageBg: #8DC4FD;
 @contentBg: #A7D6FE;
 @contentColor: #FFF;
@@ -6,6 +6,8 @@
   display: flex;
   background: @CardBg;
   box-shadow: 0 10px 6px -6px #777;
+  padding: 5px;
+
   &--directionRow {
     flex-direction: row;
   }
@@ -19,16 +21,28 @@
     flex-direction: row-reverse;
   }
 
+  &-price {
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    text-align: right;
+
+  }
+
   &-image {
     display: flex;
+    flex-direction: row;
     flex: 1;
-    background: @imageBg;
+  }
+  &-imagePreview {
+    display: flex;
+    flex-direction: row;
+
   }
   img {
     width: 100%;
   }
   &-content {
-    padding: 10px;
     display: flex;
     flex: 1;
     flex-direction: column;

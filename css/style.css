@@ -1,7 +1,9 @@
+@import "Toggle/toggle.css";
 .Card {
   display: flex;
-  background: #7DAEE9;
+  background: #fff;
   box-shadow: 0 10px 6px -6px #777;
+  padding: 5px;
 }
 .Card--directionRow {
   flex-direction: row;
@@ -15,16 +17,25 @@
 .Card--directionRowReverse {
   flex-direction: row-reverse;
 }
+.Card-price {
+  display: flex;
+  position: absolute;
+  align-self: flex-end;
+  text-align: right;
+}
 .Card-image {
   display: flex;
+  flex-direction: row;
   flex: 1;
-  background: #8DC4FD;
+}
+.Card-imagePreview {
+  display: flex;
+  flex-direction: row;
 }
 .Card img {
   width: 100%;
 }
 .Card-content {
-  padding: 10px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -35,6 +46,9 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
 }
 .Container--centered {
   margin: 0 auto;
@@ -48,7 +62,7 @@
   flex-direction: row;
 }
 .uWidth {
-  max-width: 860px;
+  max-width: 900px;
 }
 .uFlex-x1 {
   flex: 1;
@@ -62,17 +76,123 @@
 .uBox {
   width: 200px;
 }
+.uBackground-card {
+  background: #ffffff;
+}
+.uBackground-altCard {
+  background: #fef5cc;
+}
+.uBackground-content {
+  background: none;
+  color: #2a2a2a;
+}
+.uBackground-footer {
+  background: #f7f7f7;
+}
+.uBackground-altFooter {
+  background: #f5ecc3;
+  color: #a39e80;
+}
+.uBackground-nav {
+  background: #333333;
+}
+.uBackground-altNav {
+  background-color: #dbdbdb;
+}
+.uBackground-altButton {
+  background-color: #fff;
+  padding: 8px;
+}
+.uCentered {
+  margin: 0 auto;
+}
+.uFontStyle {
+  font-family: 'Oswald', sans-serif;
+}
+.uFontStyle--x2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.uFontStyle-altNav {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.uFontStyle-title {
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  font-size: 14px;
+  padding-top: 22px;
+  font-weight: bold;
+}
+.uFontStyle-price {
+  color: #fff;
+  background: red;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+  font-weight: bold;
+}
+.uFontStyle-footer {
+  color: #adadad;
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  padding: 5px;
+  margin: 0;
+}
+.uFontStyle-footer--alt {
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  padding: 5px;
+  margin: 0;
+  color: #b7b294;
+}
+.uInput {
+  display: flex;
+  border: none;
+  padding: 8px;
+}
+.uInput-list {
+  display: flex;
+  border: none;
+  padding: 8px;
+  width: 12px;
+}
+.uMargin {
+  margin-left: 5px;
+}
+.uMargin-none {
+  margin: 0;
+}
+.uButtonPadding-ad {
+  padding: 5px;
+}
+.uButtonPadding-search {
+  padding: 8px;
+}
 .Button {
   display: flex;
-  background: #4F80E1;
+  background: #f52620;
   max-width: 100px;
   color: #FFF;
   border: none;
   padding: 5px;
   border-radius: 5px;
+  align-self: center;
 }
-.Button:hover {
-  background: #7DAEE9 ;
+.Button-altButton {
+  background: linear-gradient(to top, #eeeeee 20%, #f9f9f8 50%, #fefefe 80%);
+  padding: 8px;
+  display: flex;
+  max-width: 100px;
+  color: #000;
+  border: none;
+  justify-content: center;
 }
 body {
   display: flex;
@@ -83,24 +203,58 @@ html {
   height: 100%;
 }
 .StickyFooter {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 auto;
-  background: #FABCA3;
   height: 60px;
 }
 .Nav {
   display: flex;
-  list-style: none;
-  line-height: 2.5;
-  border: 1px solid black;
-  background: #4F80E1;
-  color: #fff;
+  flex: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 50px;
 }
-.Nav-items {
+.Nav-title {
   display: flex;
-  background: #7DAEE9;
+  flex: 1;
+  align-items: center;
 }
-.Nav-items--alignSelf {
+.Nav-toggle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   margin-left: auto;
+}
+.Nav-elemCentered {
+  display: flex;
+  align-items: center;
+}
+.Nav img {
+  padding: 5px;
+}
+@media (max-width: 785px) {
+  .displayNone {
+    display: none;
+  }
+}
+@media (max-width: 785px) {
+  .changeDir {
+    flex-direction: column;
+  }
+}
+@media (max-width: 785px) {
+  .changeDir--row {
+    flex-direction: row;
+  }
+}
+@media (max-width: 435px) {
+  .changeDir-min {
+    flex-direction: column;
+  }
+}
+body {
+  background-color: #f1f1e9;
 }
 .wrap {
   display: flex;

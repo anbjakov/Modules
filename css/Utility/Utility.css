@@ -1,5 +1,5 @@
 .uWidth {
-  max-width: 860px;
+  max-width: 900px;
 }
 .uFlex-x1 {
   flex: 1;
@@ -12,4 +12,103 @@
 }
 .uBox {
   width: 200px;
+}
+.uBackground-card {
+  background: #ffffff;
+}
+.uBackground-altCard {
+  background: #fef5cc;
+}
+.uBackground-content {
+  background: none;
+  color: #2a2a2a;
+}
+.uBackground-footer {
+  background: #f7f7f7;
+}
+.uBackground-altFooter {
+  background: #f5ecc3;
+  color: #a39e80;
+}
+.uBackground-nav {
+  background: #333333;
+}
+.uBackground-altNav {
+  background-color: #dbdbdb;
+}
+.uBackground-altButton {
+  background-color: #fff;
+  padding: 8px;
+}
+.uCentered {
+  margin: 0 auto;
+}
+.uFontStyle {
+  font-family: 'Oswald', sans-serif;
+}
+.uFontStyle--x2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.uFontStyle-altNav {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.uFontStyle-title {
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  font-size: 14px;
+  padding-top: 22px;
+  font-weight: bold;
+}
+.uFontStyle-price {
+  color: #fff;
+  background: red;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+  font-weight: bold;
+}
+.uFontStyle-footer {
+  color: #adadad;
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  padding: 5px;
+  margin: 0;
+}
+.uFontStyle-footer--alt {
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  padding: 5px;
+  margin: 0;
+  color: #b7b294;
+}
+.uInput {
+  display: flex;
+  border: none;
+  padding: 8px;
+}
+.uInput-list {
+  display: flex;
+  border: none;
+  padding: 8px;
+  width: 12px;
+}
+.uMargin {
+  margin-left: 5px;
+}
+.uMargin-none {
+  margin: 0;
+}
+.uButtonPadding-ad {
+  padding: 5px;
+}
+.uButtonPadding-search {
+  padding: 8px;
 }
